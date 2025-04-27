@@ -1,9 +1,9 @@
 ---
-title: 'Home'
+title: 'Home' 
 date: 2023-10-24
 type: landing
 
-design:
+design: 
   # Default section spacing
   spacing: "6rem"
 
@@ -23,7 +23,7 @@ sections:
         text: "Announcing the release of version 1."
         link:
           text: "Read more"
-          url: "/blog/"
+          url: "/new_blog/"
     design:
       spacing:
         padding: [0, 0, 0, 0]

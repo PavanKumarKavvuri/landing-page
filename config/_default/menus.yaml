@@ -3,18 +3,24 @@
 #   The `weight` parameter defines the order that the links will appear in.
 
 main:
-  - name: Home
+  - name: Robotics
     url: /#top
     weight: 10
-  - name: Features
-    url: /#features
+  - name: SLAM Resources
+    url: slam_resources/
     weight: 20
-  - name: Solutions
-    url: /#solutions
-    weight: 30
-  - name: Resources
-    weight: 40
-    hasChildren: true
-  - parent: Resources
-    name: Blog
-    url: blog/
+  # - name: Solutions
+  #   url: /#solutions
+  #   weight: 30
+  # - name: Resources
+  #   weight: 40
+  #   hasChildren: true
+  # - parent: Resources
+  #   name: Blog
+  #   url: blog/
+  - name: SLAM SOTA
+    url: slam_sota/
+    weight: 50
+  - name: About
+    url: about/
+    weight: 60
