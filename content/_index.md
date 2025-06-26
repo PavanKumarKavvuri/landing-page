@@ -1,13 +1,50 @@
 ---
-title: 'Home'
+title: 'Home' 
 date: 2023-10-24
 type: landing
 
-design:
+design: 
   # Default section spacing
   spacing: "6rem"
 
 sections:
+
+  - block: hero
+    content:
+      title: Build Your Landing Pages with Hugo Blox
+      text: 🧱 EASY. FREE (OPEN SOURCE). NO-CODE  🧱
+      filters:
+        folders:
+          - publication
+        featured_only: true
+      # primary_action:
+      #   text: Get Started
+      #   url: slam_resources/
+      #   icon: rocket-launch
+      # secondary_action:
+      #   text: Read the docs
+      #   url: https://docs.hugoblox.com
+      # announcement:
+      #   text: "Announcing the release of version 1."
+      #   link:
+      #     text: "Read more"
+      #     url: "/new_blog/"
+    design:
+      view: article-grid
+      columns: 2
+
+  # - block: collection
+  #   id: papers
+  #   content:
+  #     title: Featured Publications
+  #     filters:
+  #       folders:
+  #         - publication
+  #       featured_only: true
+  #   design:
+  #     view: article-grid
+  #     columns: 2
+
   - block: hero
     content:
       title: Build Your Landing Pages with Hugo Blox
@@ -23,7 +60,7 @@ sections:
         text: "Announcing the release of version 1."
         link:
           text: "Read more"
-          url: "/blog/"
+          url: "/new_blog/"
     design:
       spacing:
         padding: [0, 0, 0, 0]

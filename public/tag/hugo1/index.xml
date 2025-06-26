@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hugo1 | Creator&#39;s Landing Page | Hugo Theme</title>
+    <link>http://localhost:1313/tag/hugo1/</link>
+      <atom:link href="http://localhost:1313/tag/hugo1/index.xml" rel="self" type="application/rss+xml" />
+    <description>Hugo1</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/logo.svg</url>
+      <title>Hugo1</title>
+      <link>http://localhost:1313/tag/hugo1/</link>
+    </image>
+    
+    <item>
+      <title>Ransac</title>
+      <link>http://localhost:1313/utils/vo/ransac/</link>
+      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/utils/vo/ransac/</guid>
+      <description>&lt;p&gt;RANSAC, short for Random Sample Consensus, is an iterative algorithm used for robust fitting of models in the presence of many outliers in a dataset. It works by randomly selecting subsets of the data, fitting a model to each subset, and then evaluating how many data points fit the model within a given tolerance. The algorithm then repeats this process multiple times and selects the model with the highest number of inliers (data points that fit well).&lt;/p&gt;
+&lt;p&gt;Ransac algorithm can be found here &lt;a href=&#34;http://localhost:1313/utils/vo/least_squares/&#34;&gt;Ranasc&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Visual Odometry</title>
+      <link>http://localhost:1313/slam_resources/lie_groups/</link>
+      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/slam_resources/lie_groups/</guid>
+      <description>&lt;p&gt;Visual Odometry is the process of estimating the ego motion of an agent using only the input of a single or multiple cameras attached to it.&lt;/p&gt;
+&lt;p&gt;For understandng the state of the art of VO follow these links&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/utils/vo/ransac/&#34;&gt;Visual Odometry Part I: The First 30 Years and Fundamentals&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

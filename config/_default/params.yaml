@@ -12,19 +12,19 @@ appearance:
 marketing:
   seo:
     site_type: Person
-    local_business_type: ''
-    org_name: ''
-    description: 'A highly-customizable Hugo landing page theme powered by Hugo Blox website builder.'
-    twitter: 'GetResearchDev'
+    local_business_type: ""
+    org_name: ""
+    description: "A highly-customizable Hugo landing page theme powered by Hugo Blox website builder."
+    twitter: "GetResearchDev"
   analytics:
-    google_analytics: ''
-    baidu_tongji: ''
-    plausible: ''
-    fathom: ''
-    pirsch: ''
+    google_analytics: ""
+    baidu_tongji: ""
+    plausible: ""
+    fathom: ""
+    pirsch: ""
   verification:
-    google: ''
-    baidu: ''
+    google: ""
+    baidu: ""
 
 # Site header
 header:
@@ -47,9 +47,21 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} My Company'
+    notice: "© {2025} Open Source Robotics Dev"
 
 # Localization
 locale:
-  date_format: 'Jan 2, 2006'
-  time_format: '3:04 PM'
+  date_format: "Jan 2, 2006"
+  time_format: "3:04 PM"
+
+style:
+  css:
+    - css/custom.css
+
+fonts:
+  enable: false
+
+
+# style:
+#   css:
+#     - css/custom.css
