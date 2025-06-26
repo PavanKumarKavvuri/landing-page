@@ -1,12 +1,12 @@
 name: Deploying with NEW Yaml
 
 on:
-    push:
-        branches:
-            - main
-    pull_request:
-        branches:
-            - main
+    # push:
+    #     branches:
+    #         - main
+    # pull_request:
+    #     branches:
+    #         - main
         
 
 jobs:
