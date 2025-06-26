@@ -1,4 +1,4 @@
-name: Deploy Hugo site to GitHub Pages
+name: Deploying with NEW Yaml
 
 on:
     push:

@@ -1,4 +1,4 @@
-name: Deploy website to GitHub Pages
+name: Deploying with OLD YAML
 
 env:
   WC_HUGO_VERSION: '0.147.0'  # Update to the latest Hugo version as needed
@@ -10,7 +10,6 @@ on:
   # Allows you to run this workflow manually from the Actions tab on GitHub.
   workflow_dispatch:
 
-# Provide permission to clone the repo and deploy it to GitHub Pages
 permissions:
   contents: read
   pages: write
