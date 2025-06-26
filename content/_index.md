@@ -11,7 +11,7 @@ sections:
 
   - block: hero
     content:
-      title: Build Your Landing Pages with Hugo Blox Pavan
+      title: Build Your Landing Pages with Hugo Blox Pavan Kumar Kavvuri
       text: 🧱 EASY. FREE (OPEN SOURCE). NO-CODE  🧱
       primary_action:
         text: Get Started
