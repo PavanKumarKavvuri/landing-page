@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Slam State-of-the Art | Creator&#39;s Landing Page | Hugo Theme</title>
+    <title>Slam State-of-the Art | Math To Motion</title>
     <link>http://localhost:1313/slam_sota/</link>
       <atom:link href="http://localhost:1313/slam_sota/index.xml" rel="self" type="application/rss+xml" />
     <description>Slam State-of-the Art</description>
