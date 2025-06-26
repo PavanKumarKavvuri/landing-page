@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Utils | Creator&#39;s Landing Page | Hugo Theme</title>
+    <link>http://localhost:1313/utils/</link>
+      <atom:link href="http://localhost:1313/utils/index.xml" rel="self" type="application/rss+xml" />
+    <description>Utils</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Wed, 25 Oct 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>http://localhost:1313/media/logo.svg</url>
+      <title>Utils</title>
+      <link>http://localhost:1313/utils/</link>
+    </image>
+    
+    <item>
+      <title>Ransac</title>
+      <link>http://localhost:1313/utils/vo/ransac/</link>
+      <pubDate>Wed, 25 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/utils/vo/ransac/</guid>
+      <description>&lt;p&gt;RANSAC, short for Random Sample Consensus, is an iterative algorithm used for robust fitting of models in the presence of many outliers in a dataset. It works by randomly selecting subsets of the data, fitting a model to each subset, and then evaluating how many data points fit the model within a given tolerance. The algorithm then repeats this process multiple times and selects the model with the highest number of inliers (data points that fit well).&lt;/p&gt;
+&lt;p&gt;Ransac algorithm can be found here &lt;a href=&#34;http://localhost:1313/utils/vo/least_squares/&#34;&gt;Ranasc&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/utils/vo/least_squares/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/utils/vo/least_squares/</guid>
+      <description>&lt;h2 id=&#34;hello-pavan&#34;&gt;Hello Pavan&lt;/h2&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

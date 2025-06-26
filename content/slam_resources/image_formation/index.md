@@ -1,5 +1,5 @@
 ---
-title: Camera Image Formation
+title: Visual Odometry
 summary: Use popular tools such as Plotly, Mermaid, and data frames.
 date: 2023-10-25
 authors:
@@ -11,10 +11,103 @@ tags:
 image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
+# 🗺️ Visual Odometry (VO) — One-Month Project Plan
 
-Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.
+A structured 4-week plan to implement a feature-based VO system from scratch. Aligned with classical VO architecture:
 
-Use popular tools such as Plotly, Mermaid, and data frames.
+- Image Sequence  
+- Feature Detection  
+- Feature Matching  
+- Motion Estimation  
+- Local Optimization
+
+---
+
+## 📆 Week-by-Week Plan
+
+### ✅ Week 1: Setup & Feature-Based VO Prototype
+
+**🎯 Goal**: Get a working pipeline from image input to trajectory output.
+
+- Set up development environment (Python + OpenCV + NumPy).
+- Choose and load dataset (e.g., KITTI, EUROC, or your own camera).
+- Load monocular or stereo frames.
+
+**Implement:**
+
+- Feature extraction (e.g., ORB or SIFT).
+- Feature matching (e.g., FLANN or brute-force matcher).
+- Estimate motion:
+  - Essential matrix with **Five-Point RANSAC**.
+  - Recover pose (rotation + translation).
+- Triangulate 3D points from matched features.
+- Visualize 2D/3D trajectory (Matplotlib / Open3D).
+
+**✅ Deliverable**: Basic VO pipeline with visual trajectory on dataset.
+
+---
+
+### ✅ Week 2: Improve Robustness & Accuracy
+
+**🎯 Goal**: Make the pipeline more robust and less sensitive to noise.
+
+- Replace brute-force matching with:
+  - KLT tracker (e.g., `cv2.calcOpticalFlowPyrLK`), or
+  - Efficient matcher with ratio test.
+- Add a motion model or frame-to-frame filtering.
+- Tune RANSAC threshold to reduce outliers.
+- Add **scale recovery** (using stereo baseline or known motion if monocular).
+
+**✅ Deliverable**: Smoother and more consistent VO output across sequences.
+
+---
+
+### ✅ Week 3: Add Optimization & Visual Backend
+
+**🎯 Goal**: Optimize motion estimation over multiple frames.
+
+- Add a **pose graph** or **keyframe-based** structure.
+- Integrate **Bundle Adjustment**:
+  - Use libraries like [g2o](https://github.com/RainerKuemmerle/g2o) or [Ceres Solver](http://ceres-solver.org/).
+- Optimize poses and 3D landmarks together.
+- Keyframe selection/culling: keep one every N frames or when motion exceeds threshold.
+
+**✅ Deliverable**: Refined, consistent map and camera trajectory.
+
+---
+
+### ✅ Week 4: Evaluation + Real-Time Extension
+
+**🎯 Goal**: Evaluate system, improve performance, and test real-time capability.
+
+- Compare estimated trajectory with ground truth using:
+  - ATE (Absolute Trajectory Error)
+  - RPE (Relative Pose Error)
+- Plot error metrics and visualize drift.
+- Optional:
+  - Integrate IMU for better scale estimation.
+  - Run real-time VO using a USB/RPi camera.
+  - Add a basic ROS2 wrapper around the pipeline.
+
+- Finalize code:
+  - Write README, add example scripts.
+  - Record and share video demos.
+
+**✅ Deliverable**: Shareable, reproducible VO system with error plots and visual output.
+
+---
+
+## 🔧 Tools & Libraries Used
+
+- Python 3, OpenCV
+- NumPy, Matplotlib, Open3D
+- g2o / Ceres (for optimization)
+- Optional: ROS2, IMU tools
+
+---
+
+> 💡 **Tip**: You can extend this pipeline toward SLAM by adding loop closure detection and global optimization later.
+
 
 ## Charts
 

@@ -6,11 +6,11 @@ main:
   - name: Robotics
     url: /#top
     weight: 10
-  - name: SLAM Resources
+  - name: SLAM Frontiers
     url: slam_resources/
     weight: 20
-  # - name: Solutions
-  #   url: /#solutions
+  # - name: Publications
+  #   url: publication/
   #   weight: 30
   # - name: Resources
   #   weight: 40
@@ -18,9 +18,9 @@ main:
   # - parent: Resources
   #   name: Blog
   #   url: blog/
-  - name: SLAM SOTA
-    url: slam_sota/
-    weight: 50
+  # - name: SLAM SOTA
+  #   url: slam_sota/
+  #   weight: 50
   - name: About
     url: about/
     weight: 60

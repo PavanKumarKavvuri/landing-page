@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: April 27, 2025 --><html lang="en-us" dir="ltr"
+<!-- Last Published: June 26, 2025 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="light">
   
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -64,6 +64,9 @@
   
   
 
+  
+    
+    <link href="/css/custom.min.24c54f316c20cfa5367141da110ed21a40ed2e34b313c40b92339e1cf19480e5.css" rel="stylesheet" />
   
 
   <script>
@@ -187,7 +190,7 @@
   
   <meta property="og:site_name" content="Creator&#39;s Landing Page | Hugo Theme" />
   <meta property="og:url" content="http://localhost:1313/slam_resources/image_formation/" />
-  <meta property="og:title" content="Camera Image Formation | Creator&#39;s Landing Page | Hugo Theme" />
+  <meta property="og:title" content="Visual Odometry | Creator&#39;s Landing Page | Hugo Theme" />
   <meta property="og:description" content="Use popular tools such as Plotly, Mermaid, and data frames." /><meta property="og:image" content="http://localhost:1313/slam_resources/image_formation/featured.jpg" />
     <meta property="twitter:image" content="http://localhost:1313/slam_resources/image_formation/featured.jpg" /><meta property="og:locale" content="en-us" />
   
@@ -207,7 +210,7 @@
   
 
 
-  <title>Camera Image Formation | Creator&#39;s Landing Page | Hugo Theme</title>
+  <title>Visual Odometry | Creator&#39;s Landing Page | Hugo Theme</title>
 
   
   
@@ -260,6 +263,27 @@
   
   
   
+  
+  
+  
+    
+      
+      
+        
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+        
+        
+      
     
       
       
@@ -391,6 +415,14 @@
         
       
     
+  
+  
+  
+  
+  
+  
+  
+  
   
   
   
@@ -583,21 +615,7 @@
           class="nav-link "
           
           href="/slam_resources/"
-        >SLAM Resources</a
-        >
-      </li>
-      
-      
-      
-      
-      
-      
-      <li class="nav-item">
-        <a
-          class="nav-link "
-          
-          href="/slam_sota/"
-        >SLAM SOTA</a
+        >SLAM Frontiers</a
         >
       </li>
       
@@ -724,15 +742,35 @@
             <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
         </span>
     </a><div class="ltr:pr-0 overflow-hidden">
-        <ul class="hb-sidebar-list"><li class="flex flex-col open"><a
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/slam_resources/optimisation/"
+    
+  >Non-linear Optimisation
+    </a>
+              
+            </li><li class="flex flex-col open"><a
     class="hb-sidebar-custom-link
       sidebar-active-item bg-primary-100 font-semibold text-primary-800 dark:bg-primary-300 dark:text-primary-900"
     href="/slam_resources/image_formation/"
     
-  >Camera Image Formation
+  >Visual Odometry
     </a>
   
     <ul class="hb-sidebar-mobile-toc"><li>
+              <a
+                href="#-week-by-week-plan"
+                class="hb-docs-link"
+              >📆 Week-by-Week Plan</a>
+            </li>
+          <li>
+              <a
+                href="#-tools--libraries-used"
+                class="hb-docs-link"
+              >🔧 Tools &amp;amp; Libraries Used</a>
+            </li>
+          <li>
               <a
                 href="#charts"
                 class="hb-docs-link"
@@ -764,15 +802,7 @@
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/slam_resources/lie_groups/"
     
-  >Lie Groups &amp; Lie Algebra
-    </a>
-              
-            </li><li class="flex flex-col "><a
-    class="hb-sidebar-custom-link
-      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
-    href="/slam_resources/optimisation/"
-    
-  >Non-linear Optimisation
+  >Visual Odometry
     </a>
               
             </li></ul>
@@ -918,10 +948,74 @@
         <li class=""><a
     class="hb-sidebar-custom-link
       text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/utils/"
+    
+  >Utils
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/utils/vo/ransac/"
+    
+  >Ransac
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/utils/vo/least_squares/"
+    
+  >least_squares
+    </a>
+              
+            </li></ul>
+      </div></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
     href="/about/"
     
   >About
     </a></li>
+        <li class=""><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/"
+    
+  >Publications
+        <span data-hb-sidebar-toggle>
+            <svg fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-[18px] min-w-[18px] rounded-sm p-0.5 hover:bg-gray-800/5 dark:hover:bg-gray-100/5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" class="origin-center transition-transform rtl:-rotate-180"></path></svg>
+        </span>
+    </a><div class="ltr:pr-0 overflow-hidden">
+        <ul class="hb-sidebar-list"><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/preprint/"
+    
+  >An example preprint / working paper
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/journal-article/"
+    
+  >An example journal article
+    </a>
+              
+            </li><li class="flex flex-col "><a
+    class="hb-sidebar-custom-link
+      text-gray-500 hover:bg-gray-100 hover:text-gray-900 dark:text-gray-300 dark:hover:bg-primary-800 dark:hover:text-gray-50"
+    href="/publication/conference-paper/"
+    
+  >An example conference paper
+    </a>
+              
+            </li></ul>
+      </div></li>
     </ul>
 
     <div class="max-xl:hidden h-0 w-64 shrink-0"></div></div>
@@ -943,6 +1037,24 @@
 
 
   <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4"><p class="mb-4 font-semibold tracking-tight">On this page</p><ul>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#-week-by-week-plan">📆 Week-by-Week Plan</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#-week-1-setup--feature-based-vo-prototype">✅ Week 1: Setup &amp; Feature-Based VO Prototype</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#-week-2-improve-robustness--accuracy">✅ Week 2: Improve Robustness &amp; Accuracy</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#-week-3-add-optimization--visual-backend">✅ Week 3: Add Optimization &amp; Visual Backend</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="pl-4 rtl:pr-4 inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#-week-4-evaluation--real-time-extension">✅ Week 4: Evaluation &#43; Real-Time Extension</a>
+      </li>
+      <li class="my-2 scroll-my-6 scroll-py-6">
+        <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#-tools--libraries-used">🔧 Tools &amp; Libraries Used</a>
+      </li>
       <li class="my-2 scroll-my-6 scroll-py-6">
         <a class="font-semibold inline-block text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-300 w-full break-words" href="#charts">Charts</a>
       </li>
@@ -986,7 +1098,7 @@
 
       
 
-      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Camera Image Formation</h1>
+      <h1 class="mt-2 text-4xl font-bold tracking-tight text-slate-900 dark:text-slate-100">Visual Odometry</h1>
 
       <div class="mt-4 mb-16">
       <div class="text-gray-500 dark:text-gray-300 text-sm flex items-center flex-wrap gap-y-2"><span class="mr-1">Oct 25, 2023</span><span class="mx-1">·</span>
@@ -1006,7 +1118,7 @@
         
         <span class="mx-1">·</span>
         <span class="mx-1">
-          2 min read
+          4 min read
         </span>
         
         </div>
@@ -1051,8 +1163,109 @@
       
 
       <div class="prose prose-slate lg:prose-xl dark:prose-invert">
-        <p>Hugo Blox is designed to give technical content creators a seamless experience. You can focus on the content and Hugo Blox handles the rest.</p>
-<p>Use popular tools such as Plotly, Mermaid, and data frames.</p>
+        <h1 id="-visual-odometry-vo--one-month-project-plan">🗺️ Visual Odometry (VO) — One-Month Project Plan</h1>
+<p>A structured 4-week plan to implement a feature-based VO system from scratch. Aligned with classical VO architecture:</p>
+<ul>
+<li>Image Sequence</li>
+<li>Feature Detection</li>
+<li>Feature Matching</li>
+<li>Motion Estimation</li>
+<li>Local Optimization</li>
+</ul>
+<hr>
+<h2 id="-week-by-week-plan">📆 Week-by-Week Plan</h2>
+<h3 id="-week-1-setup--feature-based-vo-prototype">✅ Week 1: Setup &amp; Feature-Based VO Prototype</h3>
+<p><strong>🎯 Goal</strong>: Get a working pipeline from image input to trajectory output.</p>
+<ul>
+<li>Set up development environment (Python + OpenCV + NumPy).</li>
+<li>Choose and load dataset (e.g., KITTI, EUROC, or your own camera).</li>
+<li>Load monocular or stereo frames.</li>
+</ul>
+<p><strong>Implement:</strong></p>
+<ul>
+<li>Feature extraction (e.g., ORB or SIFT).</li>
+<li>Feature matching (e.g., FLANN or brute-force matcher).</li>
+<li>Estimate motion:
+<ul>
+<li>Essential matrix with <strong>Five-Point RANSAC</strong>.</li>
+<li>Recover pose (rotation + translation).</li>
+</ul>
+</li>
+<li>Triangulate 3D points from matched features.</li>
+<li>Visualize 2D/3D trajectory (Matplotlib / Open3D).</li>
+</ul>
+<p><strong>✅ Deliverable</strong>: Basic VO pipeline with visual trajectory on dataset.</p>
+<hr>
+<h3 id="-week-2-improve-robustness--accuracy">✅ Week 2: Improve Robustness &amp; Accuracy</h3>
+<p><strong>🎯 Goal</strong>: Make the pipeline more robust and less sensitive to noise.</p>
+<ul>
+<li>Replace brute-force matching with:
+<ul>
+<li>KLT tracker (e.g., <code>cv2.calcOpticalFlowPyrLK</code>), or</li>
+<li>Efficient matcher with ratio test.</li>
+</ul>
+</li>
+<li>Add a motion model or frame-to-frame filtering.</li>
+<li>Tune RANSAC threshold to reduce outliers.</li>
+<li>Add <strong>scale recovery</strong> (using stereo baseline or known motion if monocular).</li>
+</ul>
+<p><strong>✅ Deliverable</strong>: Smoother and more consistent VO output across sequences.</p>
+<hr>
+<h3 id="-week-3-add-optimization--visual-backend">✅ Week 3: Add Optimization &amp; Visual Backend</h3>
+<p><strong>🎯 Goal</strong>: Optimize motion estimation over multiple frames.</p>
+<ul>
+<li>Add a <strong>pose graph</strong> or <strong>keyframe-based</strong> structure.</li>
+<li>Integrate <strong>Bundle Adjustment</strong>:
+<ul>
+<li>Use libraries like <a href="https://github.com/RainerKuemmerle/g2o" target="_blank" rel="noopener">g2o</a> or <a href="http://ceres-solver.org/" target="_blank" rel="noopener">Ceres Solver</a>.</li>
+</ul>
+</li>
+<li>Optimize poses and 3D landmarks together.</li>
+<li>Keyframe selection/culling: keep one every N frames or when motion exceeds threshold.</li>
+</ul>
+<p><strong>✅ Deliverable</strong>: Refined, consistent map and camera trajectory.</p>
+<hr>
+<h3 id="-week-4-evaluation--real-time-extension">✅ Week 4: Evaluation + Real-Time Extension</h3>
+<p><strong>🎯 Goal</strong>: Evaluate system, improve performance, and test real-time capability.</p>
+<ul>
+<li>
+<p>Compare estimated trajectory with ground truth using:</p>
+<ul>
+<li>ATE (Absolute Trajectory Error)</li>
+<li>RPE (Relative Pose Error)</li>
+</ul>
+</li>
+<li>
+<p>Plot error metrics and visualize drift.</p>
+</li>
+<li>
+<p>Optional:</p>
+<ul>
+<li>Integrate IMU for better scale estimation.</li>
+<li>Run real-time VO using a USB/RPi camera.</li>
+<li>Add a basic ROS2 wrapper around the pipeline.</li>
+</ul>
+</li>
+<li>
+<p>Finalize code:</p>
+<ul>
+<li>Write README, add example scripts.</li>
+<li>Record and share video demos.</li>
+</ul>
+</li>
+</ul>
+<p><strong>✅ Deliverable</strong>: Shareable, reproducible VO system with error plots and visual output.</p>
+<hr>
+<h2 id="-tools--libraries-used">🔧 Tools &amp; Libraries Used</h2>
+<ul>
+<li>Python 3, OpenCV</li>
+<li>NumPy, Matplotlib, Open3D</li>
+<li>g2o / Ceres (for optimization)</li>
+<li>Optional: ROS2, IMU tools</li>
+</ul>
+<hr>
+<blockquote>
+<p>💡 <strong>Tip</strong>: You can extend this pipeline toward SLAM by adding loop closure detection and global optimization later.</p></blockquote>
 <h2 id="charts">Charts</h2>
 <p>Hugo Blox supports the popular <a href="https://plot.ly/" target="_blank" rel="noopener">Plotly</a> format for interactive data visualizations. With Plotly, you can design almost any kind of visualization you can imagine!</p>
 <p>Save your Plotly JSON in your page folder, for example <code>line-chart.json</code>, and then add the <code>{{&lt; chart data=&quot;line-chart&quot; &gt;}}</code> shortcode where you would like the chart to appear.</p>
@@ -1061,7 +1274,7 @@
 
 
 
-<div id="chart-763928451" class="chart"></div>
+<div id="chart-938157642" class="chart"></div>
 <script>
   async function fetchChartJSON() {
     console.debug('Hugo Blox fetching chart JSON...')
@@ -1079,7 +1292,7 @@
 
       fetchChartJSON().then(chart => {
         console.debug('Plotting chart...')
-        window.Plotly.newPlot('chart-763928451', chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot('chart-938157642', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
@@ -1293,7 +1506,7 @@ Crash --> [*]
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fslam_resources%2Fimage_formation%2F&amp;text=Camera&#43;Image&#43;Formation"
+    href="https://twitter.com/intent/tweet?url=http%3A%2F%2Flocalhost%3A1313%2Fslam_resources%2Fimage_formation%2F&amp;text=Visual&#43;Odometry"
     title="X"
     aria-label="X"
     id="share-link-x"
@@ -1311,7 +1524,7 @@ Crash --> [*]
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fslam_resources%2Fimage_formation%2F&amp;t=Camera&#43;Image&#43;Formation"
+    href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Flocalhost%3A1313%2Fslam_resources%2Fimage_formation%2F&amp;t=Visual&#43;Odometry"
     title="Facebook"
     aria-label="Facebook"
     id="share-link-facebook"
@@ -1331,7 +1544,7 @@ Crash --> [*]
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="mailto:?subject=Camera%20Image%20Formation&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fslam_resources%2Fimage_formation%2F"
+    href="mailto:?subject=Visual%20Odometry&amp;body=http%3A%2F%2Flocalhost%3A1313%2Fslam_resources%2Fimage_formation%2F"
     title="Email"
     aria-label="Email"
     id="share-link-email"
@@ -1349,7 +1562,7 @@ Crash --> [*]
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fslam_resources%2Fimage_formation%2F&amp;title=Camera&#43;Image&#43;Formation"
+    href="https://www.linkedin.com/shareArticle?url=http%3A%2F%2Flocalhost%3A1313%2Fslam_resources%2Fimage_formation%2F&amp;title=Visual&#43;Odometry"
     title="LinkedIn"
     aria-label="LinkedIn"
     id="share-link-linkedin"
@@ -1367,7 +1580,7 @@ Crash --> [*]
   <a
     target="_blank" rel="noopener"
     class="m-1 rounded-md bg-neutral-300 p-1.5 text-neutral-700 hover:bg-primary-500 hover:text-neutral-300 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800"
-    href="whatsapp://send?text=Camera&#43;Image&#43;Formation%20http%3A%2F%2Flocalhost%3A1313%2Fslam_resources%2Fimage_formation%2F"
+    href="whatsapp://send?text=Visual&#43;Odometry%20http%3A%2F%2Flocalhost%3A1313%2Fslam_resources%2Fimage_formation%2F"
     title="WhatsApp"
     aria-label="WhatsApp"
     id="share-link-whatsapp"
@@ -1507,6 +1720,22 @@ Crash --> [*]
   <div class="flex flex-col md:flex-row flex-nowrap justify-between gap-5 pt-2">
     <div class="">
       
+        <a class="group flex no-underline" href="/slam_resources/optimisation/">
+          <span
+            class="mt-[-0.3rem] me-2 text-neutral-700 transition-transform group-hover:-translate-x-[2px] group-hover:text-primary-600 dark:text-neutral dark:group-hover:text-primary-400"
+          ><span class="ltr:inline rtl:hidden">&larr;</span></span>
+          <span class="flex flex-col">
+            <span
+              class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+            >Non-linear Optimisation</span>
+            <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+              
+                Oct 25, 2023
+              
+            </span>
+          </span>
+        </a>
+      
     </div>
     <div class="">
       
@@ -1514,7 +1743,7 @@ Crash --> [*]
           <span class="flex flex-col">
             <span
               class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-            >Lie Groups &amp; Lie Algebra</span
+            >Visual Odometry</span
             >
             <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
               
